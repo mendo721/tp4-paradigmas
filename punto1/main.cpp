@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Cuenta.h"
+#include "Cuenta.cpp"
 
 using namespace std;
 int main() {

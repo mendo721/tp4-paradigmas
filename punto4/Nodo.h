@@ -1,13 +1,13 @@
 #include <iostream>
+#pragma once
 using namespace std;
 
 typedef int item;
-const int indefinido = -9999;
-class nodo
+class Fila;
+class Nodo
 {
-private:
+public:
     item dato;
-    nodo *siguiente;
-public: 
+    Nodo *siguiente;
 };
 

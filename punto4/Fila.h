@@ -1,19 +1,24 @@
 #include <iostream>
-using namespace std;
+#pragma once
+#include "Nodo.h"
 
+using namespace std;
+const int indefinido = -9999;
 class Fila
 {
 private:
-    /* data */
+    Nodo *frente;
+    Nodo *final;
+    int longitud;
 public:
-    Fila(/* args */);
+    Fila();
     ~Fila();
+    bool EsFilaVacia();
+    item Frente();
+    void Defila();
+    void Enfila(item n);
+    int Longitud();
+    bool Pertenece(item n);
+    void FilaVacia();
+    void Mostrar();
 };
-
-Fila::Fila(/* args */)
-{
-}
-
-Fila::~Fila()
-{
-}
